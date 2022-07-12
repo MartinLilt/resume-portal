@@ -1,0 +1,22 @@
+{
+  "homepage": "https://github.com/MartinLilt/resume-social-portal",
+  "dependencies": {
+    "@react-icons/all-files": "^4.1.0",
+    "gh-pages": "^4.0.0",
+    "parcel": "^2.6.2",
+    "react": "17.0.0",
+    "react-dom": "17.0.0",
+    "react-icons": "^4.4.0",
+    "styled-components": "^5.3.5"
+  },
+  "devDependencies": {
+    "@parcel/transformer-svg-react": "^2.6.2",
+    "process": "^0.11.10"
+  },
+  "scripts": {
+    "start": "parcel build src/index.html && parcel src/index.html",
+    "build": "parcel build src/index.html",
+    "predeploy": "rm -rf dist && parcel build src/index.html --no-source-maps --public-url ./",
+    "deploy": "gh-pages -d dist"
+  }
+}
