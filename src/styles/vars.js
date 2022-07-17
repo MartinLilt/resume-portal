@@ -2,6 +2,7 @@ export const varStyle = {
   backgrounds: {
     accent: '#ffc206',
     main: '#1d1d1d',
+    white: '#ffffff',
     opacity: {
       low: 'rgba(255,255,255,0.25)',
       medium: 'rgba(255,255,255,0.35)',

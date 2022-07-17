@@ -1,12 +1,10 @@
 import { useState } from 'react';
-import { StyledBg } from './styles';
 
-import Container from './components/Container';
-import Header from './components/Header';
-import Main from './components/Main';
-import Content from './components/Content';
-import FooterBg from './components/Footer';
-import Modal from './components/Modal';
+import StyledBackground from './components/sceenBackground';
+import Header from './components/header';
+import Main from './components/mainContent';
+import Footer from './components/footer';
+import Modal from './components/modal';
 
 const body = document.body;
 
@@ -27,24 +25,11 @@ export function App() {
       {isModalOpen && (
         <Modal toggleModal={toggleModal} modalContent={modalContent} />
       )}
-      <StyledBg>
-        <Container>
-          <Header toggleModal={toggleModal} />
-          <main>
-            <Main />
-            <Content />
-          </main>
-        </Container>
-        <FooterBg />
-      </StyledBg>
+      <StyledBackground>
+        <Header toggleModal={toggleModal} />
+        <Main />
+        <Footer />
+      </StyledBackground>
     </>
   );
 }
-
-// @media screen and (min-width: 768px) {
-//     max-width: 768px;
-//     background-image: url(${imageTablet});
-//   }
-//   @media screen and (min-width: 1280px) {
-//     background-image: url(${imageDesktop});
-//   }

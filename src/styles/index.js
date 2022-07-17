@@ -24,17 +24,6 @@ export const ModalBox = styled.div`
   z-index: 99999;
 `;
 
-export const ConteinerBox = styled.div`
-  min-width: 280px;
-  padding: 0 20px;
-  margin: 0 auto;
-  @media screen and (min-width: 768px) {
-    padding: 0 30px;
-  }
-  @media screen and (min-width: 1280px) {
-  }
-`;
-
 export const HeaderTitle = styled.div`
   color: ${varStyle.colors.white};
   font-family: 'Montserrat';
@@ -236,29 +225,6 @@ export const MainList = styled.ul`
 
   margin: 0 0 40px 0;
   padding: 0;
-`;
-
-export const FooterLink = styled.a`
-  text-decoration: none;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 22px;
-  text-transform: uppercase;
-  color: ${varStyle.colors.dark};
-  background: ${varStyle.backgrounds.accent};
-  clip-path: polygon(0 30%, 50% 0, 100% 30%, 100% 100%, 0% 100%);
-  padding: 20px 40px 60px 40px;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  @media screen and (min-width: 768px) {
-  }
-  @media screen and (min-width: 1280px) {
-  }
 `;
 
 export const FooterText = styled.span`

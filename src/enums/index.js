@@ -12,10 +12,32 @@ export const links = [
     href: 'https://www.instagram.com/limi.amm/',
   },
   {
-    name: 'youtube',
-    href: 'https://www.youtube.com/channel/UCgNgqqdNJea2Db66exg2KxQ',
+    name: 'upwork',
+    href: 'https://www.upwork.com/',
   },
 ];
+
+export const modalLinks = {
+  contacts: [
+    {
+      title: 'whatsapp',
+      href: 'https://wa.me/message/6H4GYDA6KLTND1',
+    },
+    {
+      title: 'telegram',
+      href: 'https://t.me/limi_amm',
+    },
+    {
+      title: 'reddit',
+      href: 'https://www.reddit.com/u/amaliik?utm_medium=android_app&utm_source=share',
+    },
+    {
+      title: 'mail',
+      href: 'mailto:liminovi@gmail.com',
+    },
+  ],
+  info: [],
+};
 
 export const modalType = {
   menu: 'modal-menu',
