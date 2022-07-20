@@ -5,14 +5,14 @@ export const Container = css`
   padding: 0 20px 80px 20px;
 
   @media screen and (min-width: 768px) {
-    width: 768px;
+    width: 708px;
     padding-right: 30px;
     padding-left: 30px;
     margin: 0 auto;
   }
 
   @media screen and (min-width: 1366px) {
-    width: 1366px;
+    width: 1306px;
   }
 `;
 

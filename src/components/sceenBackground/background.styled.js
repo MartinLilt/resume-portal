@@ -19,23 +19,28 @@ export const StyledBackground = styled.div`
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     background-image: url(${imageMobileFullScreen});
+    background-color: ${varStyle.backgrounds.main};
   }
 
   @media screen and (min-width: 768px) {
     background-image: url(${imageTabletDefault});
+    background-color: ${varStyle.backgrounds.main};
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       background-image: url(${imageTabletFullScreen});
+      background-color: ${varStyle.backgrounds.main};
     }
   }
 
   @media screen and (min-width: 1366px) {
     background-image: url(${imageDesktopDefault});
+    background-color: ${varStyle.backgrounds.main};
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       background-image: url(${imageDesktopFullScreen});
+      background-color: ${varStyle.backgrounds.main};
     }
   }
 `;

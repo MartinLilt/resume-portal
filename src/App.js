@@ -1,10 +1,17 @@
+import React, { Suspense } from 'react';
 import { useState } from 'react';
+import { GlobalStyle } from './styles';
 
-import StyledBackground from './components/sceenBackground';
-import Header from './components/header';
-import Main from './components/mainContent';
-import Footer from './components/footer';
-import Modal from './components/modal';
+const StyledBackground = React.lazy(() =>
+  import('./components/sceenBackground')
+);
+const Header = React.lazy(() => import('./components/header'));
+const Main = React.lazy(() => import('./components/mainContent'));
+const Footer = React.lazy(() => import('./components/footer'));
+const Modal = React.lazy(() => import('./components/modal'));
+
+import Loader from './components/loader';
+import ErrorBoundary from './components/errorBoundary';
 
 const body = document.body;
 
@@ -22,14 +29,18 @@ export function App() {
 
   return (
     <>
+      <GlobalStyle />
+      <ErrorBoundary />
       {isModalOpen && (
         <Modal toggleModal={toggleModal} modalContent={modalContent} />
       )}
-      <StyledBackground>
-        <Header toggleModal={toggleModal} />
-        <Main />
-        <Footer />
-      </StyledBackground>
+      <Suspense fallback={<Loader />}>
+        <StyledBackground>
+          <Header toggleModal={toggleModal} />
+          <Main />
+          <Footer />
+        </StyledBackground>
+      </Suspense>
     </>
   );
 }
