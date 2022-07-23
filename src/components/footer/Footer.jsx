@@ -1,3 +1,4 @@
+import React from 'react';
 import { FooterContainer } from '../container/container.styled';
 
 import { FooterBg, FooterLink, FooterTitle, FooterText } from './footer.styled';

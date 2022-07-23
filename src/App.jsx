@@ -15,7 +15,7 @@ import ErrorBoundary from './components/errorBoundary';
 
 const body = document.body;
 
-export function App() {
+export default function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalContent, setModalContent] = useState(null);
 
@@ -27,20 +27,16 @@ export function App() {
       : (body.style.overflow = 'hidden');
   };
 
-  return (
-    <>
-      <GlobalStyle />
-      <ErrorBoundary />
-      {isModalOpen && (
-        <Modal toggleModal={toggleModal} modalContent={modalContent} />
-      )}
-      <Suspense fallback={<Loader />}>
-        <StyledBackground>
-          <Header toggleModal={toggleModal} />
-          <Main />
-          <Footer />
-        </StyledBackground>
-      </Suspense>
-    </>
-  );
+  return <><GlobalStyle />
+  <ErrorBoundary />
+  {isModalOpen && (
+    <Modal toggleModal={toggleModal} modalContent={modalContent} />
+  )}
+  <Suspense fallback={<Loader />}>
+    <StyledBackground>
+      <Header toggleModal={toggleModal} />
+      <Main />
+      <Footer />
+    </StyledBackground>
+  </Suspense></>
 }

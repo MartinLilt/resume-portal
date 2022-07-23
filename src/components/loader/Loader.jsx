@@ -1,3 +1,4 @@
+import React from 'react';
 import { StyledLoaderBox, StyledLoader } from './loader.styled';
 import { Oval } from 'react-loader-spinner';
 import { varStyle } from '../../styles/vars';

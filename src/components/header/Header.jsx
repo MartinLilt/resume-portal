@@ -1,3 +1,4 @@
+import React from 'react';
 import { modalType } from '../../enums';
 import { varStyle } from '../../styles/vars';
 import { HeaderContainer } from '../container/container.styled';
@@ -9,12 +10,11 @@ import {
   HeaderSvg,
 } from './header.styled';
 
-import PhoneIcon from '../../icons/phone.svg';
-import BurgerMenuIcon from '../../icons/burger.svg';
+// import PhoneIcon from '../../icons/phone.svg';
+// import BurgerMenuIcon from '../../icons/burger.svg';
+import headerLogo from '../../image/logo.png';
 
 const Header = ({ toggleModal }) => {
-  const headerLogo = new URL('../../image/logo.png', import.meta.url);
-
   return (
     <HeaderContainer>
       <HeaderList>
@@ -30,7 +30,7 @@ const Header = ({ toggleModal }) => {
             onClick={() => toggleModal(modalType.contact)}
           >
             <HeaderSvg>
-              <PhoneIcon fill={varStyle.colors.accent} />
+              {/* <PhoneIcon fill={varStyle.colors.accent} /> */}
             </HeaderSvg>
           </HeaderButton>
         </HeaderSentence>
@@ -42,7 +42,7 @@ const Header = ({ toggleModal }) => {
             onClick={() => toggleModal(modalType.menu)}
           >
             <HeaderSvg>
-              <BurgerMenuIcon fill={varStyle.colors.white} />
+              {/* <BurgerMenuIcon fill={varStyle.colors.white} /> */}
             </HeaderSvg>
           </HeaderButton>
         </HeaderSentence>

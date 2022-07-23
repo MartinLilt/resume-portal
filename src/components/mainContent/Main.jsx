@@ -1,3 +1,4 @@
+import React from 'react';
 import {
   MainList,
   MainSentence,
@@ -10,7 +11,7 @@ import { varStyle } from '../../styles/vars';
 
 import ItemMainContent from '../ItemMainContent';
 
-import ArrowIcon from '../../icons/arrow.svg';
+// import ArrowIcon from '../../icons/arrow.svg';
 
 const Main = () => {
   return (
@@ -34,7 +35,7 @@ const Main = () => {
           </MainSentence>
         </MainList>
         <MainSvg title="Scroll below to see more!">
-          <ArrowIcon fill={varStyle.colors.accent} />
+          {/* <ArrowIcon fill={varStyle.colors.accent} /> */}
         </MainSvg>
         <ItemMainContent />
       </SectionContainer>

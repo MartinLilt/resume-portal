@@ -1,4 +1,4 @@
-// import {} from './errorBoundary.styled';
+import React from 'react';
 
 const ErrorBoundary = () => {
   return (
