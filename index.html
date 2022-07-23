@@ -1,1 +1,25 @@
-<!DOCTYPE html><html lang="en"><head><link rel="stylesheet" href="index.fb60bc6c.css"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;800&display=swap" rel="stylesheet"><title>My Parcel App</title></head><body> <div id="app"></div> <script type="module" src="index.5c5b03b4.js"></script> </body></html>
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap" rel="stylesheet">
+      <title>My resume</title>
+      
+    </head>
+    <body>
+      <div id="app"></div>
+      <script src=bundle.index-OJRPRDKW.js></script>
+      <script>
+      const evtSource = new EventSource('http://localhost:3000/subscribe');
+      evtSource.onopen = function () {console.log('open')};
+      evtSource.onerror = function () {console.log('error')};
+      evtSource.onmessage = function () {console.log('message')
+      window.location.reload();
+    };
+      </script>
+    </body>
+  </html>
+  
